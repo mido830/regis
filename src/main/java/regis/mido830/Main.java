@@ -18,8 +18,8 @@ public class Main {
 
         list.downloadXML(profileLink);
         threshold = readThreshold(list);
-
         XMLparser.parseXML(list.getList()); //parses games.xml and fills the list
+        GameList.gamesFile.deleteOnExit();
         list.updateList();                  //asks Steam Web API for player count for each game on the list and updates the list with this information
         Collections.sort(list.getList());   //sorts the list by player count
         list.excludeBelowX(threshold);      //removes games from the list with playerCount below X

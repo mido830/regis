@@ -10,6 +10,7 @@ import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.parsers.ParserConfigurationException;
 import java.io.IOException;
 import java.util.List;
+import java.util.Optional;
 
 public class XMLparser {
 
@@ -41,18 +42,11 @@ public class XMLparser {
                 String gameName = game.getElementsByTagName("name").item(0).getTextContent();
                 String logoLink = game.getElementsByTagName("logo").item(0).getTextContent();
                 String storeLink = game.getElementsByTagName("storeLink").item(0).getTextContent();
-                double hoursPlayed;
-                if (game.getElementsByTagName("hoursOnRecord").item(0) == null) {
-                    hoursPlayed = 0.0;
-                } else {
-                    hoursPlayed = Double.parseDouble(game.getElementsByTagName("hoursOnRecord").item(0).getTextContent().replace(",", ""));
-                }
+                double hoursPlayed = Optional.ofNullable(game.getElementsByTagName("hoursOnRecord").item(0)).map(hp -> hp.getTextContent().replace(",", "")).map(Double::parseDouble).orElse(0.0);
 
                 Game gameObject = new Game(appID, gameName, logoLink, storeLink, hoursPlayed, 0); //initially setting playerCount to 0 when creating regis.Game objects, it gets updated later
                 gameList.add(gameObject);
             }
-
-            GameList.gamesFile.deleteOnExit();
         } catch (ParserConfigurationException | SAXException | IOException e) {
             System.out.println("Failed to parse the game list\n" + e.getMessage());
         }
