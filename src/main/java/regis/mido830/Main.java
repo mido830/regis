@@ -24,6 +24,10 @@ public class Main {
         Collections.sort(list.getList());   //sorts the list by player count
         list.excludeBelowX(threshold);      //removes games from the list with playerCount below X
         System.out.println(list);
+
+        Scanner exit = new Scanner(System.in);
+        exit.nextLine();
+        exit.close();
     }
 
     public static void getProfileLinkAndDownloadXML(GameList list) {
@@ -42,17 +46,15 @@ public class Main {
 
     private static int readThreshold(GameList list) {
         Scanner scanner = new Scanner(System.in);
-        System.out.println("\nExclude games below X players. Enter X to filter the list or press enter to show all games:");
+        System.out.println("Exclude games below X players. Enter X to filter the list or press enter to show all games:");
         String input = scanner.nextLine();
         try {
             if ("wipe".equals(input) || "reset".equals(input)) {
                 wipe(userPreferences);
                 getProfileLinkAndDownloadXML(list);
             }
-            scanner.close();
             return Integer.parseInt(input);
         } catch (NumberFormatException ex) {
-            scanner.close();
             return 0;
         }
     }
