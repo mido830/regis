@@ -13,24 +13,25 @@ public class Main {
 
         String profileLink = userPreferences.get("SteamProfileURL", "");
         if (profileLink.equals("")) {
-            getProfileLinkAndDownloadXML(list);
+            profileLink = getProfileLinkAndDownloadXML(list);
         }
 
         list.downloadXML(profileLink);
         threshold = readThreshold(list);
         XMLparser.parseXML(list.getList()); //parses games.xml and fills the list
-        GameList.gamesFile.deleteOnExit();
+        GameList.gamesFile.deleteOnExit();  //deletes games.xml when it's no longer needed
         list.updateList();                  //asks Steam Web API for player count for each game on the list and updates the list with this information
         Collections.sort(list.getList());   //sorts the list by player count
         list.excludeBelowX(threshold);      //removes games from the list with playerCount below X
         System.out.println(list);
 
+        System.out.println("\nPress Enter to exit.");
         Scanner exit = new Scanner(System.in);
         exit.nextLine();
         exit.close();
     }
 
-    public static void getProfileLinkAndDownloadXML(GameList list) {
+    public static String getProfileLinkAndDownloadXML(GameList list) {
         Scanner scanner = new Scanner(System.in);
         boolean successfullyDownloadedXML = false;
         String profileLink = "";
@@ -42,6 +43,7 @@ public class Main {
             successfullyDownloadedXML = list.downloadXML(profileLink);
         }
         userPreferences.put("SteamProfileURL", profileLink);
+        return profileLink;
     }
 
     private static int readThreshold(GameList list) {
@@ -52,6 +54,7 @@ public class Main {
             if ("wipe".equals(input) || "reset".equals(input)) {
                 wipe(userPreferences);
                 getProfileLinkAndDownloadXML(list);
+                input = String.valueOf(readThreshold(list));
             }
             return Integer.parseInt(input);
         } catch (NumberFormatException ex) {
