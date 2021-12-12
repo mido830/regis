@@ -76,28 +76,19 @@ public class GameList {
 
     public void updateList() { //updates the "playerCount" variable for each game. Progress counting also happens here.
         AtomicInteger progress = new AtomicInteger();
-        CompletableFuture<Void> future;
-        List<CompletableFuture<Void>> futures = new ArrayList<>();
 
         System.out.println("\nDDoSing Steam API in progress... :)\n");
 
-        for (Game game : list) {
-            future = CompletableFuture.runAsync(() -> {
-                game.setPlayerCount(checkPlayerCount(game.getAppID()));
-                progress.incrementAndGet();
-                System.out.printf("\rProgress: %s/%d games checked.", progress, list.size());
-            });
-            futures.add(future);
-        }
-
-        for (CompletableFuture<Void> i : futures) {
-            try {
-                i.get();
-            } catch (InterruptedException | ExecutionException e) {
-                System.out.println(e.getMessage());
-            }
-        }
-        System.out.println("\n");
+        list.parallelStream()
+                .map(game ->
+                        CompletableFuture.supplyAsync(() -> checkPlayerCount(game.getAppID()))
+                                .thenApply(count -> {
+                                    System.out.println(String.format("Found: %s for game id: %s", count, game.getAppID()));
+                                    game.setPlayerCount(count);
+                                    return game;
+                                }))
+                .forEach(CompletableFuture::join);
+        System.out.println(System.lineSeparator());
     }
 
     public void excludeBelowX(int x) {
