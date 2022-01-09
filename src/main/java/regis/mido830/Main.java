@@ -6,6 +6,7 @@ import java.util.prefs.Preferences;
 
 public class Main {
     static Preferences userPreferences = Preferences.userNodeForPackage(Main.class);
+    static XMLparser parser = new XMLparser();
 
     public static void main(String[] args) {
         GameList list = new GameList();     //creates an empty list to store info about owned games
@@ -13,16 +14,16 @@ public class Main {
 
         String profileLink = userPreferences.get("SteamProfileURL", "");
         if (profileLink.equals("")) {
-            profileLink = getProfileLinkAndDownloadXML(list);
+            profileLink = getProfileLinkAndDownloadXML();
         }
 
-        list.downloadXML(profileLink);
-        threshold = readThreshold(list);
-        XMLparser.parseXML(list.getList()); //parses games.xml and fills the list
-        GameList.gamesFile.deleteOnExit();  //deletes games.xml when it's no longer needed
-        list.updateList();                  //asks Steam Web API for player count for each game on the list and updates the list with this information
-        Collections.sort(list.getList());   //sorts the list by player count
-        list.excludeBelowX(threshold);      //removes games from the list with playerCount below X
+        parser.downloadXML(profileLink);
+        threshold = readThreshold();
+        parser.parseXML(list.getList(), parser.getGamesFile());  //parses games.xml and fills the list
+        parser.getGamesFile().deleteOnExit();                   //deletes games.xml when it's no longer needed
+        list.updateList(list.getList());                        //asks Steam Web API for player count for each game on the list and updates the list with this information
+        Collections.sort(list.getList());                       //sorts the list by player count
+        list.excludeBelowX(threshold);                          //removes games from the list with playerCount below X
         System.out.println(list);
 
         System.out.println("\nPress Enter to exit.");
@@ -31,7 +32,7 @@ public class Main {
         exit.close();
     }
 
-    public static String getProfileLinkAndDownloadXML(GameList list) {
+    public static String getProfileLinkAndDownloadXML() {
         Scanner scanner = new Scanner(System.in);
         boolean successfullyDownloadedXML = false;
         String profileLink = "";
@@ -40,21 +41,21 @@ public class Main {
             profileLink = scanner.nextLine();
             profileLink = profileLink.replaceAll(".*steamcommunity", "https://steamcommunity");
             profileLink = String.format("%s" + (profileLink.endsWith("/") ? "games?tab=all&xml=1" : "/games?tab=all&xml=1"), profileLink);
-            successfullyDownloadedXML = list.downloadXML(profileLink);
+            successfullyDownloadedXML = parser.downloadXML(profileLink);
         }
         userPreferences.put("SteamProfileURL", profileLink);
         return profileLink;
     }
 
-    private static int readThreshold(GameList list) {
+    private static int readThreshold() {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Exclude games below X players. Enter X to filter the list or press enter to show all games:");
         String input = scanner.nextLine();
         try {
             if ("wipe".equals(input) || "reset".equals(input)) {
                 wipe(userPreferences);
-                getProfileLinkAndDownloadXML(list);
-                input = String.valueOf(readThreshold(list));
+                getProfileLinkAndDownloadXML();
+                input = String.valueOf(readThreshold());
             }
             return Integer.parseInt(input);
         } catch (NumberFormatException ex) {

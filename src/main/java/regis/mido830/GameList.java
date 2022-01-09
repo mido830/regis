@@ -3,16 +3,11 @@ package regis.mido830;
 import com.eclipsesource.json.Json;
 import com.eclipsesource.json.JsonValue;
 
-import java.io.File;
-import java.io.FileOutputStream;
 import java.io.IOException;
 import java.net.URI;
-import java.net.URL;
 import java.net.http.HttpClient;
 import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
-import java.nio.channels.Channels;
-import java.nio.channels.ReadableByteChannel;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.CompletableFuture;
@@ -22,7 +17,6 @@ import java.util.stream.Collectors;
 
 public class GameList {
 
-    static File gamesFile;
     private List<Game> list;
 
     public GameList() {
@@ -60,21 +54,7 @@ public class GameList {
         return playersOnline;
     }
 
-    public boolean downloadXML(String profileLink) { //downloads games.xml (the list of owned games)
-        try {
-            gamesFile = File.createTempFile("games", ".xml", null);
-            URL profile = new URL(profileLink);
-            ReadableByteChannel rbc = Channels.newChannel(profile.openStream());
-            FileOutputStream fos = new FileOutputStream(gamesFile);
-            fos.getChannel().transferFrom(rbc, 0, Long.MAX_VALUE);
-            return true;
-        } catch (IOException e) {
-            System.out.println("Failed to download your game list. Make sure your Steam profile URL is correct.");
-            return false;
-        }
-    }
-
-    public void updateList() { //updates the "playerCount" variable for each game. Progress counting also happens here.
+    public void updateList(List<Game> list) { //updates the "playerCount" variable for each game. Progress counting also happens here.
         AtomicInteger progress = new AtomicInteger();
         CompletableFuture<Void> future;
         List<CompletableFuture<Void>> futures = new ArrayList<>();

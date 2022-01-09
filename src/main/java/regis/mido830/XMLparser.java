@@ -8,18 +8,43 @@ import org.xml.sax.SAXException;
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.parsers.ParserConfigurationException;
+import java.io.File;
+import java.io.FileOutputStream;
 import java.io.IOException;
+import java.net.URL;
+import java.nio.channels.Channels;
+import java.nio.channels.ReadableByteChannel;
 import java.util.List;
 import java.util.Optional;
 
 public class XMLparser {
 
-    public static void parseXML(List<Game> gameList) {
+    private File gamesFile;
+
+    public File getGamesFile() {
+        return gamesFile;
+    }
+
+    public boolean downloadXML(String profileLink) { //downloads games.xml (the list of owned games)
+        try {
+            gamesFile = File.createTempFile("games", ".xml", null);
+            URL profile = new URL(profileLink);
+            ReadableByteChannel rbc = Channels.newChannel(profile.openStream());
+            FileOutputStream fos = new FileOutputStream(gamesFile);
+            fos.getChannel().transferFrom(rbc, 0, Long.MAX_VALUE);
+            return true;
+        } catch (IOException e) {
+            System.out.println("Failed to download your game list. Make sure your Steam profile URL is correct.");
+            return false;
+        }
+    }
+
+    public void parseXML(List<Game> gameList, File gamesFile) {
         DocumentBuilderFactory dbf = DocumentBuilderFactory.newInstance();
 
         try {
             DocumentBuilder db = dbf.newDocumentBuilder();
-            Document doc = db.parse(GameList.gamesFile);
+            Document doc = db.parse(gamesFile);
             doc.getDocumentElement().normalize();
 
             Element gamesNode = (Element) doc.getElementsByTagName("games").item(0);

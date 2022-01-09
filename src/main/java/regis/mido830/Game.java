@@ -22,17 +22,34 @@ public class Game implements Comparable<Game> {
         return playerCount + " - " + name;
     }
 
-    public void setPlayerCount(int playerCount) {
-        this.playerCount = playerCount;
-    }
-
     public int getAppID() {
         return appID;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public String getLogoLink() {
+        return logoLink;
+    }
+
+    public String getStoreLink() {
+        return storeLink;
+    }
+
+    public Double getHoursPlayed() {
+        return hoursPlayed;
     }
 
     public int getPlayerCount() {
         return playerCount;
     }
+
+    public void setPlayerCount(int playerCount) {
+        this.playerCount = playerCount;
+    }
+
 
     @Override
     public int compareTo(Game game) {//allowing to sort games by playerCount
