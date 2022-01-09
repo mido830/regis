@@ -5,3 +5,7 @@ It requires your Steam profile to be public as well as your games list to be pub
 
 
 ![](https://i.imgur.com/b0uMUxv.png)
+
+
+Requires Java 11 or newer:
+https://www.oracle.com/java/technologies/downloads/
