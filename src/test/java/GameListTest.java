@@ -10,7 +10,8 @@ public class GameListTest {
 
     @Test
     public void checkPlayerCountTest() {
-        assertTrue(testList.checkPlayerCount(730) > 0);
-        //checks if the number of players for CS:GO (the most popular game on Steam) is greater than 0
+        int CSGOid = 730;
+        assertTrue(testList.checkPlayerCount(CSGOid) > 0);
+        //CS:GO is the most popular game on Steam, so it should always have more than 0 players online.
     }
 }
