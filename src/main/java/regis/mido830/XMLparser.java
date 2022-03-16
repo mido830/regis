@@ -15,7 +15,6 @@ import java.net.URL;
 import java.nio.channels.Channels;
 import java.nio.channels.ReadableByteChannel;
 import java.util.List;
-import java.util.Optional;
 
 public class XMLparser {
 
@@ -25,11 +24,11 @@ public class XMLparser {
         return gamesFile;
     }
 
-    public boolean downloadXML(String profileLink) { //downloads games.xml (the list of owned games)
+    public boolean downloadXML(String profileID, String steamWebAPIkey) { //downloads games.xml (the list of owned games)
         try {
             gamesFile = File.createTempFile("games", ".xml", null);
-            URL profile = new URL(profileLink);
-            ReadableByteChannel rbc = Channels.newChannel(profile.openStream());
+            URL gamesList = new URL("http://api.steampowered.com/IPlayerService/GetOwnedGames/v0001/?key=" + steamWebAPIkey + "&steamid=" + profileID + "&include_played_free_games=1&include_appinfo=1&format=xml");
+            ReadableByteChannel rbc = Channels.newChannel(gamesList.openStream());
             FileOutputStream fos = new FileOutputStream(gamesFile);
             fos.getChannel().transferFrom(rbc, 0, Long.MAX_VALUE);
             return true;
@@ -54,22 +53,19 @@ public class XMLparser {
                 return;
             }
 
-            NodeList gamesNodeList = gamesNode.getElementsByTagName("game");
+            NodeList gamesNodeList = gamesNode.getElementsByTagName("message");
 
             if (gamesNodeList.getLength() == 0) { //applies when the profile is public but the game list is not
                 System.out.println("The profile is public but the game list is not.");
                 return;
             }
 
-            for (int i = 0; i < gamesNodeList.getLength(); i++) { //parses additional info about games in case you want to display something more than just the player count and the name
+            for (int i = 0; i < gamesNodeList.getLength(); i++) {
                 Element game = (Element) gamesNodeList.item(i);
-                int appID = Integer.parseInt(game.getElementsByTagName("appID").item(0).getTextContent());
+                int appID = Integer.parseInt(game.getElementsByTagName("appid").item(0).getTextContent());
                 String gameName = game.getElementsByTagName("name").item(0).getTextContent();
-                String logoLink = game.getElementsByTagName("logo").item(0).getTextContent();
-                String storeLink = game.getElementsByTagName("storeLink").item(0).getTextContent();
-                double hoursPlayed = Optional.ofNullable(game.getElementsByTagName("hoursOnRecord").item(0)).map(hp -> hp.getTextContent().replace(",", "")).map(Double::parseDouble).orElse(0.0);
 
-                Game gameObject = new Game(appID, gameName, logoLink, storeLink, hoursPlayed, 0); //initially setting playerCount to 0 when creating regis.Game objects, it gets updated later
+                Game gameObject = new Game(appID, gameName, 0); //initially setting playerCount to 0 when creating Game objects, it gets updated later
                 gameList.add(gameObject);
             }
         } catch (ParserConfigurationException | SAXException | IOException e) {

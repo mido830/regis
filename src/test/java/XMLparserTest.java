@@ -8,7 +8,6 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 
 import java.io.File;
 import java.net.URL;
-import java.util.List;
 import java.util.Objects;
 
 public class XMLparserTest {
@@ -24,26 +23,19 @@ public class XMLparserTest {
         //when
         parser.parseXML(testList.getList(), gamesFileTest);
 
-
         //then
         Game firstGameOnList = testList.getList().get(0);
-        Game lastGameOnList = testList.getList().get(testList.getList().size()-1);
+        Game lastGameOnList = testList.getList().get(testList.getList().size() - 1);
 
-        assertEquals(firstGameOnList.getAppID(),440);
-        assertEquals(firstGameOnList.getName(),"Team Fortress 2");
-        assertEquals(firstGameOnList.getLogoLink(),"https://cdn.cloudflare.steamstatic.com/steam/apps/440/capsule_184x69.jpg");
-        assertEquals(firstGameOnList.getStoreLink(),"https://steamcommunity.com/app/440");
-        assertEquals(firstGameOnList.getHoursPlayed(),1796);
+        assertEquals(firstGameOnList.getAppID(), 10);
+        assertEquals(firstGameOnList.getName(), "Counter-Strike");
 
-        assertEquals(lastGameOnList.getAppID(),1260130);
-        assertEquals(lastGameOnList.getName(),"Banana Hell");
-        assertEquals(lastGameOnList.getLogoLink(),"https://cdn.cloudflare.steamstatic.com/steam/apps/1260130/capsule_184x69.jpg");
-        assertEquals(lastGameOnList.getStoreLink(),"https://steamcommunity.com/app/1260130");
-        assertEquals(lastGameOnList.getHoursPlayed(),0);
+        assertEquals(lastGameOnList.getAppID(), 46550);
+        assertEquals(lastGameOnList.getName(), "Post Mortem");
     }
 
     @Test
-    public void updateListTest(){
+    public void updateListTest() {
         //given
         GameList testList = new GameList();
         XMLparser parser = new XMLparser();
@@ -55,6 +47,6 @@ public class XMLparserTest {
         testList.updateList(testList.getList());
 
         //then
-        assertTrue(testList.getList().get(0).getPlayerCount()>0);
+        assertTrue(testList.getList().get(0).getPlayerCount() > 0);
     }
 }

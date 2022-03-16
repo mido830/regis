@@ -3,17 +3,11 @@ package regis.mido830;
 public class Game implements Comparable<Game> {
     private final int appID;
     private final String name;
-    private final String logoLink;
-    private final String storeLink;
-    private Double hoursPlayed;
     private int playerCount;
 
-    public Game(int appID, String name, String logoLink, String storeLink, Double hoursPlayed, int playerCount) {
+    public Game(int appID, String name, int playerCount) {
         this.appID = appID;
         this.name = name;
-        this.logoLink = logoLink;
-        this.storeLink = storeLink;
-        this.hoursPlayed = hoursPlayed;
         this.playerCount = playerCount;
     }
 
@@ -28,18 +22,6 @@ public class Game implements Comparable<Game> {
 
     public String getName() {
         return name;
-    }
-
-    public String getLogoLink() {
-        return logoLink;
-    }
-
-    public String getStoreLink() {
-        return storeLink;
-    }
-
-    public Double getHoursPlayed() {
-        return hoursPlayed;
     }
 
     public int getPlayerCount() {

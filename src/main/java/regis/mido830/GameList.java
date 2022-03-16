@@ -10,8 +10,7 @@ import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.concurrent.CompletableFuture;
-import java.util.concurrent.ExecutionException;
+import java.util.concurrent.*;
 import java.util.concurrent.atomic.AtomicInteger;
 import java.util.stream.Collectors;
 
@@ -55,6 +54,9 @@ public class GameList {
     }
 
     public void updateList(List<Game> list) { //updates the "playerCount" variable for each game. Progress counting also happens here.
+        int threads = Runtime.getRuntime().availableProcessors();
+        ExecutorService executor = Executors.newFixedThreadPool(threads, Thread::new);
+
         AtomicInteger progress = new AtomicInteger();
         CompletableFuture<Void> future;
         List<CompletableFuture<Void>> futures = new ArrayList<>();
@@ -66,7 +68,7 @@ public class GameList {
                 game.setPlayerCount(checkPlayerCount(game.getAppID()));
                 progress.incrementAndGet();
                 System.out.printf("\rProgress: %s/%d games checked.", progress, list.size());
-            });
+            }, executor);
             futures.add(future);
         }
 

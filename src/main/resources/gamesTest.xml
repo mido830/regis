@@ -1,259 +1,302 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?><gamesList>
-	<steamID64>76561198014315688</steamID64>
-	<steamID><![CDATA[Mido]]></steamID>
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE response>
+<response>
+	<game_count>279</game_count>
 	<games>
-		<game>
-			<appID>440</appID>
-			<name><![CDATA[Team Fortress 2]]></name>
-			<logo><![CDATA[https://cdn.cloudflare.steamstatic.com/steam/apps/440/capsule_184x69.jpg]]></logo>
-			<storeLink><![CDATA[https://steamcommunity.com/app/440]]></storeLink>
-			<hoursLast2Weeks>25.8</hoursLast2Weeks>
-			<hoursOnRecord>1,796</hoursOnRecord>
-			<statsLink><![CDATA[https://steamcommunity.com/id/Kliko/stats/TF2]]></statsLink>
-			<globalStatsLink><![CDATA[https://steamcommunity.com/stats/TF2/achievements/]]></globalStatsLink>
-		</game>
-		<game>
-			<appID>374320</appID>
-			<name><![CDATA[DARK SOULS™ III]]></name>
-			<logo><![CDATA[https://cdn.cloudflare.steamstatic.com/steam/apps/374320/capsule_184x69.jpg]]></logo>
-			<storeLink><![CDATA[https://steamcommunity.com/app/374320]]></storeLink>
-			<hoursLast2Weeks>13.7</hoursLast2Weeks>
-			<hoursOnRecord>109</hoursOnRecord>
-			<statsLink><![CDATA[https://steamcommunity.com/id/Kliko/stats/374320]]></statsLink>
-			<globalStatsLink><![CDATA[https://steamcommunity.com/stats/374320/achievements/]]></globalStatsLink>
-		</game>
-		<game>
-			<appID>570940</appID>
-			<name><![CDATA[DARK SOULS™: REMASTERED]]></name>
-			<logo><![CDATA[https://cdn.cloudflare.steamstatic.com/steam/apps/570940/capsule_184x69.jpg]]></logo>
-			<storeLink><![CDATA[https://steamcommunity.com/app/570940]]></storeLink>
-			<hoursLast2Weeks>2.5</hoursLast2Weeks>
-			<hoursOnRecord>32</hoursOnRecord>
-			<statsLink><![CDATA[https://steamcommunity.com/id/Kliko/stats/570940]]></statsLink>
-			<globalStatsLink><![CDATA[https://steamcommunity.com/stats/570940/achievements/]]></globalStatsLink>
-		</game>
-		<game>
-			<appID>235540</appID>
-			<name><![CDATA[Warhammer: End Times - Vermintide]]></name>
-			<logo><![CDATA[https://cdn.cloudflare.steamstatic.com/steam/apps/235540/capsule_184x69.jpg]]></logo>
-			<storeLink><![CDATA[https://steamcommunity.com/app/235540]]></storeLink>
-			<hoursLast2Weeks>1.2</hoursLast2Weeks>
-			<hoursOnRecord>1.2</hoursOnRecord>
-			<statsLink><![CDATA[https://steamcommunity.com/id/Kliko/stats/235540]]></statsLink>
-			<globalStatsLink><![CDATA[https://steamcommunity.com/stats/235540/achievements/]]></globalStatsLink>
-		</game>
-		<game>
-			<appID>255710</appID>
-			<name><![CDATA[Cities: Skylines]]></name>
-			<logo><![CDATA[https://cdn.cloudflare.steamstatic.com/steam/apps/255710/capsule_184x69.jpg]]></logo>
-			<storeLink><![CDATA[https://steamcommunity.com/app/255710]]></storeLink>
-			<hoursLast2Weeks>1.2</hoursLast2Weeks>
-			<hoursOnRecord>1.5</hoursOnRecord>
-			<statsLink><![CDATA[https://steamcommunity.com/id/Kliko/stats/255710]]></statsLink>
-			<globalStatsLink><![CDATA[https://steamcommunity.com/stats/255710/achievements/]]></globalStatsLink>
-		</game>
-		<game>
-			<appID>108600</appID>
-			<name><![CDATA[Project Zomboid]]></name>
-			<logo><![CDATA[https://cdn.cloudflare.steamstatic.com/steam/apps/108600/capsule_184x69.jpg]]></logo>
-			<storeLink><![CDATA[https://steamcommunity.com/app/108600]]></storeLink>
-			<hoursLast2Weeks>1.1</hoursLast2Weeks>
-			<hoursOnRecord>1.1</hoursOnRecord>
-		</game>
-		<game>
-			<appID>1827180</appID>
-			<name><![CDATA[Toram Online]]></name>
-			<logo><![CDATA[https://cdn.cloudflare.steamstatic.com/steam/apps/1827180/capsule_184x69.jpg]]></logo>
-			<storeLink><![CDATA[https://steamcommunity.com/app/1827180]]></storeLink>
-			<hoursLast2Weeks>0.4</hoursLast2Weeks>
-			<hoursOnRecord>0.4</hoursOnRecord>
-		</game>
-		<game>
-			<appID>292030</appID>
-			<name><![CDATA[The Witcher 3: Wild Hunt]]></name>
-			<logo><![CDATA[https://cdn.cloudflare.steamstatic.com/steam/apps/292030/capsule_184x69.jpg]]></logo>
-			<storeLink><![CDATA[https://steamcommunity.com/app/292030]]></storeLink>
-			<hoursLast2Weeks>0.2</hoursLast2Weeks>
-			<hoursOnRecord>88</hoursOnRecord>
-			<statsLink><![CDATA[https://steamcommunity.com/id/Kliko/stats/292030]]></statsLink>
-			<globalStatsLink><![CDATA[https://steamcommunity.com/stats/292030/achievements/]]></globalStatsLink>
-		</game>
-		<game>
-			<appID>335300</appID>
-			<name><![CDATA[DARK SOULS™ II: Scholar of the First Sin]]></name>
-			<logo><![CDATA[https://cdn.cloudflare.steamstatic.com/steam/apps/335300/capsule_184x69.jpg]]></logo>
-			<storeLink><![CDATA[https://steamcommunity.com/app/335300]]></storeLink>
-			<hoursLast2Weeks>0.2</hoursLast2Weeks>
-			<hoursOnRecord>27</hoursOnRecord>
-			<statsLink><![CDATA[https://steamcommunity.com/id/Kliko/stats/335300]]></statsLink>
-			<globalStatsLink><![CDATA[https://steamcommunity.com/stats/335300/achievements/]]></globalStatsLink>
-		</game>
-		<game>
-			<appID>282800</appID>
-			<name><![CDATA[100% Orange Juice]]></name>
-			<logo><![CDATA[https://cdn.cloudflare.steamstatic.com/steam/apps/282800/capsule_184x69.jpg]]></logo>
-			<storeLink><![CDATA[https://steamcommunity.com/app/282800]]></storeLink>
-			<statsLink><![CDATA[https://steamcommunity.com/id/Kliko/stats/282800]]></statsLink>
-			<globalStatsLink><![CDATA[https://steamcommunity.com/stats/282800/achievements/]]></globalStatsLink>
-		</game>
-		<game>
-			<appID>335190</appID>
-			<name><![CDATA[200% Mixed Juice!]]></name>
-			<logo><![CDATA[https://cdn.cloudflare.steamstatic.com/steam/apps/335190/capsule_184x69.jpg]]></logo>
-			<storeLink><![CDATA[https://steamcommunity.com/app/335190]]></storeLink>
-			<statsLink><![CDATA[https://steamcommunity.com/id/Kliko/stats/335190]]></statsLink>
-			<globalStatsLink><![CDATA[https://steamcommunity.com/stats/335190/achievements/]]></globalStatsLink>
-		</game>
-		<game>
-			<appID>361630</appID>
-			<name><![CDATA[404Sight]]></name>
-			<logo><![CDATA[https://cdn.cloudflare.steamstatic.com/steam/apps/361630/capsule_184x69.jpg]]></logo>
-			<storeLink><![CDATA[https://steamcommunity.com/app/361630]]></storeLink>
-			<statsLink><![CDATA[https://steamcommunity.com/id/Kliko/stats/361630]]></statsLink>
-			<globalStatsLink><![CDATA[https://steamcommunity.com/stats/361630/achievements/]]></globalStatsLink>
-		</game>
-		<game>
-			<appID>390710</appID>
-			<name><![CDATA[Acceleration of SUGURI 2]]></name>
-			<logo><![CDATA[https://cdn.cloudflare.steamstatic.com/steam/apps/390710/capsule_184x69.jpg]]></logo>
-			<storeLink><![CDATA[https://steamcommunity.com/app/390710]]></storeLink>
-			<statsLink><![CDATA[https://steamcommunity.com/id/Kliko/stats/390710]]></statsLink>
-			<globalStatsLink><![CDATA[https://steamcommunity.com/stats/390710/achievements/]]></globalStatsLink>
-		</game>
-		<game>
-			<appID>503820</appID>
-			<name><![CDATA[A Detective's Novel]]></name>
-			<logo><![CDATA[https://cdn.cloudflare.steamstatic.com/steam/apps/503820/capsule_184x69.jpg]]></logo>
-			<storeLink><![CDATA[https://steamcommunity.com/app/503820]]></storeLink>
-			<hoursOnRecord>1.0</hoursOnRecord>
-		</game>
-		<game>
-			<appID>371140</appID>
-			<name><![CDATA[Aegis Defenders]]></name>
-			<logo><![CDATA[https://cdn.cloudflare.steamstatic.com/steam/apps/371140/capsule_184x69.jpg]]></logo>
-			<storeLink><![CDATA[https://steamcommunity.com/app/371140]]></storeLink>
-			<statsLink><![CDATA[https://steamcommunity.com/id/Kliko/stats/371140]]></statsLink>
-			<globalStatsLink><![CDATA[https://steamcommunity.com/stats/371140/achievements/]]></globalStatsLink>
-		</game>
-		<game>
-			<appID>498710</appID>
-			<name><![CDATA[After Dreams]]></name>
-			<logo><![CDATA[https://cdn.cloudflare.steamstatic.com/steam/apps/498710/capsule_184x69.jpg]]></logo>
-			<storeLink><![CDATA[https://steamcommunity.com/app/498710]]></storeLink>
-			<hoursOnRecord>0.1</hoursOnRecord>
-		</game>
-		<game>
-			<appID>224420</appID>
-			<name><![CDATA[Afterfall InSanity Extended Edition]]></name>
-			<logo><![CDATA[https://cdn.cloudflare.steamstatic.com/steam/apps/224420/capsule_184x69.jpg]]></logo>
-			<storeLink><![CDATA[https://steamcommunity.com/app/224420]]></storeLink>
-			<hoursOnRecord>8.0</hoursOnRecord>
-			<statsLink><![CDATA[https://steamcommunity.com/id/Kliko/stats/AfterFallInsanity]]></statsLink>
-			<globalStatsLink><![CDATA[https://steamcommunity.com/stats/AfterFallInsanity/achievements/]]></globalStatsLink>
-		</game>
-		<game>
-			<appID>1111300</appID>
-			<name><![CDATA[Aim FTW]]></name>
-			<logo><![CDATA[https://cdn.cloudflare.steamstatic.com/steam/apps/1111300/capsule_184x69.jpg]]></logo>
-			<storeLink><![CDATA[https://steamcommunity.com/app/1111300]]></storeLink>
-			<hoursOnRecord>0.2</hoursOnRecord>
-		</game>
-		<game>
-			<appID>714010</appID>
-			<name><![CDATA[Aim Lab]]></name>
-			<logo><![CDATA[https://cdn.cloudflare.steamstatic.com/steam/apps/714010/capsule_184x69.jpg]]></logo>
-			<storeLink><![CDATA[https://steamcommunity.com/app/714010]]></storeLink>
-			<hoursOnRecord>0.3</hoursOnRecord>
-			<statsLink><![CDATA[https://steamcommunity.com/id/Kliko/stats/714010]]></statsLink>
-			<globalStatsLink><![CDATA[https://steamcommunity.com/stats/714010/achievements/]]></globalStatsLink>
-		</game>
-		<game>
-			<appID>217920</appID>
-			<name><![CDATA[Alien Rage - Unlimited]]></name>
-			<logo><![CDATA[https://cdn.cloudflare.steamstatic.com/steam/apps/217920/capsule_184x69.jpg]]></logo>
-			<storeLink><![CDATA[https://steamcommunity.com/app/217920]]></storeLink>
-			<hoursOnRecord>5.4</hoursOnRecord>
-			<statsLink><![CDATA[https://steamcommunity.com/id/Kliko/stats/217920]]></statsLink>
-			<globalStatsLink><![CDATA[https://steamcommunity.com/stats/217920/achievements/]]></globalStatsLink>
-		</game>
-		<game>
-			<appID>630</appID>
-			<name><![CDATA[Alien Swarm]]></name>
-			<logo><![CDATA[https://cdn.cloudflare.steamstatic.com/steam/apps/630/capsule_184x69.jpg]]></logo>
-			<storeLink><![CDATA[https://steamcommunity.com/app/630]]></storeLink>
-			<hoursOnRecord>13.9</hoursOnRecord>
-			<statsLink><![CDATA[https://steamcommunity.com/id/Kliko/stats/AlienSwarm]]></statsLink>
-			<globalStatsLink><![CDATA[https://steamcommunity.com/stats/AlienSwarm/achievements/]]></globalStatsLink>
-		</game>
-		<game>
-			<appID>563560</appID>
-			<name><![CDATA[Alien Swarm: Reactive Drop]]></name>
-			<logo><![CDATA[https://cdn.cloudflare.steamstatic.com/steam/apps/563560/capsule_184x69.jpg]]></logo>
-			<storeLink><![CDATA[https://steamcommunity.com/app/563560]]></storeLink>
-			<hoursOnRecord>0.8</hoursOnRecord>
-			<statsLink><![CDATA[https://steamcommunity.com/id/Kliko/stats/563560]]></statsLink>
-			<globalStatsLink><![CDATA[https://steamcommunity.com/stats/563560/achievements/]]></globalStatsLink>
-		</game>
-		<game>
-			<appID>91200</appID>
-			<name><![CDATA[Anomaly Warzone Earth]]></name>
-			<logo><![CDATA[https://cdn.cloudflare.steamstatic.com/steam/apps/91200/capsule_184x69.jpg]]></logo>
-			<storeLink><![CDATA[https://steamcommunity.com/app/91200]]></storeLink>
-			<hoursOnRecord>4.4</hoursOnRecord>
-			<statsLink><![CDATA[https://steamcommunity.com/id/Kliko/stats/AnomalyWarZoneEarth]]></statsLink>
-			<globalStatsLink><![CDATA[https://steamcommunity.com/stats/AnomalyWarZoneEarth/achievements/]]></globalStatsLink>
-		</game>
-		<game>
-			<appID>316390</appID>
-			<name><![CDATA[Anomaly Zone]]></name>
-			<logo><![CDATA[https://cdn.cloudflare.steamstatic.com/steam/apps/316390/capsule_184x69.jpg]]></logo>
-			<storeLink><![CDATA[https://steamcommunity.com/app/316390]]></storeLink>
-			<hoursOnRecord>0.2</hoursOnRecord>
-		</game>
-		<game>
-			<appID>1172470</appID>
-			<name><![CDATA[Apex Legends]]></name>
-			<logo><![CDATA[https://cdn.cloudflare.steamstatic.com/steam/apps/1172470/capsule_184x69.jpg]]></logo>
-			<storeLink><![CDATA[https://steamcommunity.com/app/1172470]]></storeLink>
-			<hoursOnRecord>1.6</hoursOnRecord>
-			<statsLink><![CDATA[https://steamcommunity.com/id/Kliko/stats/1172470]]></statsLink>
-			<globalStatsLink><![CDATA[https://steamcommunity.com/stats/1172470/achievements/]]></globalStatsLink>
-		</game>
-		<game>
-			<appID>530700</appID>
-			<name><![CDATA[Argo]]></name>
-			<logo><![CDATA[https://cdn.cloudflare.steamstatic.com/steam/apps/530700/capsule_184x69.jpg]]></logo>
-			<storeLink><![CDATA[https://steamcommunity.com/app/530700]]></storeLink>
-			<hoursOnRecord>0.2</hoursOnRecord>
-		</game>
-		<game>
-			<appID>268420</appID>
-			<name><![CDATA[Aura Kingdom]]></name>
-			<logo><![CDATA[https://cdn.cloudflare.steamstatic.com/steam/apps/268420/capsule_184x69.jpg]]></logo>
-			<storeLink><![CDATA[https://steamcommunity.com/app/268420]]></storeLink>
-			<hoursOnRecord>0.5</hoursOnRecord>
-		</game>
-		<game>
-			<appID>348510</appID>
-			<name><![CDATA[Autobahn Police Simulator]]></name>
-			<logo><![CDATA[https://cdn.cloudflare.steamstatic.com/steam/apps/348510/capsule_184x69.jpg]]></logo>
-			<storeLink><![CDATA[https://steamcommunity.com/app/348510]]></storeLink>
-			<statsLink><![CDATA[https://steamcommunity.com/id/Kliko/stats/348510]]></statsLink>
-			<globalStatsLink><![CDATA[https://steamcommunity.com/stats/348510/achievements/]]></globalStatsLink>
-		</game>
-		<game>
-			<appID>378480</appID>
-			<name><![CDATA[Badland Bandits]]></name>
-			<logo><![CDATA[https://cdn.cloudflare.steamstatic.com/steam/apps/378480/capsule_184x69.jpg]]></logo>
-			<storeLink><![CDATA[https://steamcommunity.com/app/378480]]></storeLink>
-			<statsLink><![CDATA[https://steamcommunity.com/id/Kliko/stats/378480]]></statsLink>
-			<globalStatsLink><![CDATA[https://steamcommunity.com/stats/378480/achievements/]]></globalStatsLink>
-		</game>
-		<game>
-			<appID>1260130</appID>
-			<name><![CDATA[Banana Hell]]></name>
-			<logo><![CDATA[https://cdn.cloudflare.steamstatic.com/steam/apps/1260130/capsule_184x69.jpg]]></logo>
-			<storeLink><![CDATA[https://steamcommunity.com/app/1260130]]></storeLink>
-		</game>
+		<message>
+			<appid>10</appid>
+			<name>Counter-Strike</name>
+			<playtime_forever>2937</playtime_forever>
+			<img_icon_url>6b0312cda02f5f777efa2f3318c307ff9acafbb5</img_icon_url>
+			<playtime_windows_forever>4</playtime_windows_forever>
+			<playtime_mac_forever>0</playtime_mac_forever>
+			<playtime_linux_forever>0</playtime_linux_forever>
+		</message>
+		<message>
+			<appid>30</appid>
+			<name>Day of Defeat</name>
+			<playtime_forever>60</playtime_forever>
+			<img_icon_url>aadc0ce51ff6ba2042d633f8ec033b0de62091d0</img_icon_url>
+			<playtime_windows_forever>0</playtime_windows_forever>
+			<playtime_mac_forever>0</playtime_mac_forever>
+			<playtime_linux_forever>0</playtime_linux_forever>
+		</message>
+		<message>
+			<appid>40</appid>
+			<name>Deathmatch Classic</name>
+			<playtime_forever>10</playtime_forever>
+			<img_icon_url>c525f76c8bc7353db4fd74b128c4ae2028426c2a</img_icon_url>
+			<playtime_windows_forever>0</playtime_windows_forever>
+			<playtime_mac_forever>0</playtime_mac_forever>
+			<playtime_linux_forever>0</playtime_linux_forever>
+		</message>
+		<message>
+			<appid>60</appid>
+			<name>Ricochet</name>
+			<playtime_forever>4</playtime_forever>
+			<img_icon_url>98c69e04cd59b838e05cb6980c12c05874c6419e</img_icon_url>
+			<playtime_windows_forever>0</playtime_windows_forever>
+			<playtime_mac_forever>0</playtime_mac_forever>
+			<playtime_linux_forever>0</playtime_linux_forever>
+		</message>
+		<message>
+			<appid>80</appid>
+			<name>Counter-Strike: Condition Zero</name>
+			<playtime_forever>582</playtime_forever>
+			<img_icon_url>077b050ef3e89cd84e2c5a575d78d53b54058236</img_icon_url>
+			<playtime_windows_forever>3</playtime_windows_forever>
+			<playtime_mac_forever>0</playtime_mac_forever>
+			<playtime_linux_forever>0</playtime_linux_forever>
+		</message>
+		<message>
+			<appid>100</appid>
+			<name>Counter-Strike: Condition Zero Deleted Scenes</name>
+			<playtime_forever>5</playtime_forever>
+			<img_icon_url>077b050ef3e89cd84e2c5a575d78d53b54058236</img_icon_url>
+			<playtime_windows_forever>0</playtime_windows_forever>
+			<playtime_mac_forever>0</playtime_mac_forever>
+			<playtime_linux_forever>0</playtime_linux_forever>
+		</message>
+		<message>
+			<appid>220</appid>
+			<name>Half-Life 2</name>
+			<playtime_forever>203</playtime_forever>
+			<img_icon_url>fcfb366051782b8ebf2aa297f3b746395858cb62</img_icon_url>
+			<has_community_visible_stats>true</has_community_visible_stats>
+			<playtime_windows_forever>199</playtime_windows_forever>
+			<playtime_mac_forever>0</playtime_mac_forever>
+			<playtime_linux_forever>0</playtime_linux_forever>
+		</message>
+		<message>
+			<appid>340</appid>
+			<name>Half-Life 2: Lost Coast</name>
+			<playtime_forever>22</playtime_forever>
+			<img_icon_url>795e85364189511f4990861b578084deef086cb1</img_icon_url>
+			<playtime_windows_forever>0</playtime_windows_forever>
+			<playtime_mac_forever>0</playtime_mac_forever>
+			<playtime_linux_forever>0</playtime_linux_forever>
+		</message>
+		<message>
+			<appid>320</appid>
+			<name>Half-Life 2: Deathmatch</name>
+			<playtime_forever>17</playtime_forever>
+			<img_icon_url>795e85364189511f4990861b578084deef086cb1</img_icon_url>
+			<playtime_windows_forever>0</playtime_windows_forever>
+			<playtime_mac_forever>0</playtime_mac_forever>
+			<playtime_linux_forever>0</playtime_linux_forever>
+		</message>
+		<message>
+			<appid>360</appid>
+			<name>Half-Life Deathmatch: Source</name>
+			<playtime_forever>0</playtime_forever>
+			<img_icon_url>40b8a62efff5a9ab356e5c56f5c8b0532c8e1aa3</img_icon_url>
+			<playtime_windows_forever>0</playtime_windows_forever>
+			<playtime_mac_forever>0</playtime_mac_forever>
+			<playtime_linux_forever>0</playtime_linux_forever>
+		</message>
+		<message>
+			<appid>380</appid>
+			<name>Half-Life 2: Episode One</name>
+			<playtime_forever>0</playtime_forever>
+			<img_icon_url>795e85364189511f4990861b578084deef086cb1</img_icon_url>
+			<has_community_visible_stats>true</has_community_visible_stats>
+			<playtime_windows_forever>0</playtime_windows_forever>
+			<playtime_mac_forever>0</playtime_mac_forever>
+			<playtime_linux_forever>0</playtime_linux_forever>
+		</message>
+		<message>
+			<appid>4000</appid>
+			<name>Garry&apos;s Mod</name>
+			<playtime_forever>349</playtime_forever>
+			<img_icon_url>4a6f25cfa2426445d0d9d6e233408de4d371ce8b</img_icon_url>
+			<has_community_visible_stats>true</has_community_visible_stats>
+			<playtime_windows_forever>0</playtime_windows_forever>
+			<playtime_mac_forever>0</playtime_mac_forever>
+			<playtime_linux_forever>0</playtime_linux_forever>
+		</message>
+		<message>
+			<appid>420</appid>
+			<name>Half-Life 2: Episode Two</name>
+			<playtime_forever>0</playtime_forever>
+			<img_icon_url>795e85364189511f4990861b578084deef086cb1</img_icon_url>
+			<has_community_visible_stats>true</has_community_visible_stats>
+			<playtime_windows_forever>0</playtime_windows_forever>
+			<playtime_mac_forever>0</playtime_mac_forever>
+			<playtime_linux_forever>0</playtime_linux_forever>
+		</message>
+		<message>
+			<appid>12120</appid>
+			<name>Grand Theft Auto: San Andreas</name>
+			<playtime_forever>100</playtime_forever>
+			<img_icon_url>895e9391da2b8155989022d9dd95b12e09766375</img_icon_url>
+			<playtime_windows_forever>0</playtime_windows_forever>
+			<playtime_mac_forever>0</playtime_mac_forever>
+			<playtime_linux_forever>0</playtime_linux_forever>
+		</message>
+		<message>
+			<appid>12250</appid>
+			<name>Grand Theft Auto: San Andreas</name>
+			<playtime_forever>0</playtime_forever>
+			<img_icon_url></img_icon_url>
+			<playtime_windows_forever>0</playtime_windows_forever>
+			<playtime_mac_forever>0</playtime_mac_forever>
+			<playtime_linux_forever>0</playtime_linux_forever>
+		</message>
+		<message>
+			<appid>23310</appid>
+			<name>The Last Remnant</name>
+			<playtime_forever>0</playtime_forever>
+			<img_icon_url>295601b8f28db268004564eb1ff77ef6a0b23bfe</img_icon_url>
+			<playtime_windows_forever>0</playtime_windows_forever>
+			<playtime_mac_forever>0</playtime_mac_forever>
+			<playtime_linux_forever>0</playtime_linux_forever>
+		</message>
+		<message>
+			<appid>10180</appid>
+			<name>Call of Duty: Modern Warfare 2</name>
+			<playtime_forever>1576</playtime_forever>
+			<img_icon_url>ad502494f1658220f9166c7e17ac90422bf6a479</img_icon_url>
+			<has_community_visible_stats>true</has_community_visible_stats>
+			<playtime_windows_forever>0</playtime_windows_forever>
+			<playtime_mac_forever>0</playtime_mac_forever>
+			<playtime_linux_forever>0</playtime_linux_forever>
+		</message>
+		<message>
+			<appid>10190</appid>
+			<name>Call of Duty: Modern Warfare 2 - Multiplayer</name>
+			<playtime_forever>5894</playtime_forever>
+			<img_icon_url>7dd7c2d5bce2413131762d7cbee3f059614ed69d</img_icon_url>
+			<playtime_windows_forever>25</playtime_windows_forever>
+			<playtime_mac_forever>0</playtime_mac_forever>
+			<playtime_linux_forever>0</playtime_linux_forever>
+		</message>
+		<message>
+			<appid>550</appid>
+			<name>Left 4 Dead 2</name>
+			<playtime_forever>9541</playtime_forever>
+			<img_icon_url>7d5a243f9500d2f8467312822f8af2a2928777ed</img_icon_url>
+			<has_community_visible_stats>true</has_community_visible_stats>
+			<playtime_windows_forever>1872</playtime_windows_forever>
+			<playtime_mac_forever>0</playtime_mac_forever>
+			<playtime_linux_forever>0</playtime_linux_forever>
+		</message>
+		<message>
+			<appid>48700</appid>
+			<name>Mount &amp; Blade: Warband</name>
+			<playtime_forever>1001</playtime_forever>
+			<img_icon_url>0773e90a6991a5427df4ee516687d832d92b050e</img_icon_url>
+			<has_community_visible_stats>true</has_community_visible_stats>
+			<playtime_windows_forever>258</playtime_windows_forever>
+			<playtime_mac_forever>0</playtime_mac_forever>
+			<playtime_linux_forever>0</playtime_linux_forever>
+		</message>
+		<message>
+			<appid>42700</appid>
+			<name>Call of Duty: Black Ops</name>
+			<playtime_forever>2745</playtime_forever>
+			<img_icon_url>ea744d59efded3feaeebcafed224be9eadde90ac</img_icon_url>
+			<has_community_visible_stats>true</has_community_visible_stats>
+			<playtime_windows_forever>0</playtime_windows_forever>
+			<playtime_mac_forever>0</playtime_mac_forever>
+			<playtime_linux_forever>0</playtime_linux_forever>
+		</message>
+		<message>
+			<appid>42710</appid>
+			<name>Call of Duty: Black Ops - Multiplayer</name>
+			<playtime_forever>15645</playtime_forever>
+			<img_icon_url>d595fb4b01201cade09e1232f2c41c0866840628</img_icon_url>
+			<has_community_visible_stats>true</has_community_visible_stats>
+			<playtime_windows_forever>21</playtime_windows_forever>
+			<playtime_mac_forever>0</playtime_mac_forever>
+			<playtime_linux_forever>0</playtime_linux_forever>
+		</message>
+		<message>
+			<appid>620</appid>
+			<name>Portal 2</name>
+			<playtime_forever>2247</playtime_forever>
+			<img_icon_url>2e478fc6874d06ae5baf0d147f6f21203291aa02</img_icon_url>
+			<has_community_visible_stats>true</has_community_visible_stats>
+			<playtime_windows_forever>66</playtime_windows_forever>
+			<playtime_mac_forever>0</playtime_mac_forever>
+			<playtime_linux_forever>0</playtime_linux_forever>
+		</message>
+		<message>
+			<appid>91200</appid>
+			<name>Anomaly Warzone Earth</name>
+			<playtime_forever>262</playtime_forever>
+			<img_icon_url>8b8010ddbc76c7a445648f89162f453ea7e1e101</img_icon_url>
+			<has_community_visible_stats>true</has_community_visible_stats>
+			<playtime_windows_forever>0</playtime_windows_forever>
+			<playtime_mac_forever>0</playtime_mac_forever>
+			<playtime_linux_forever>0</playtime_linux_forever>
+		</message>
+		<message>
+			<appid>11280</appid>
+			<name>Penguins Arena: Sedna&apos;s World</name>
+			<playtime_forever>265</playtime_forever>
+			<img_icon_url>a6eb88a40412e7749b895a232b7aae2cdc08c86a</img_icon_url>
+			<has_community_visible_stats>true</has_community_visible_stats>
+			<playtime_windows_forever>2</playtime_windows_forever>
+			<playtime_mac_forever>0</playtime_mac_forever>
+			<playtime_linux_forever>0</playtime_linux_forever>
+		</message>
+		<message>
+			<appid>50130</appid>
+			<name>Mafia II (Classic)</name>
+			<playtime_forever>918</playtime_forever>
+			<img_icon_url>62f1f7324e520be067aec1ab06d1ec6fa56f25bd</img_icon_url>
+			<has_community_visible_stats>true</has_community_visible_stats>
+			<playtime_windows_forever>0</playtime_windows_forever>
+			<playtime_mac_forever>0</playtime_mac_forever>
+			<playtime_linux_forever>0</playtime_linux_forever>
+		</message>
+		<message>
+			<appid>1030830</appid>
+			<name>Mafia II: Definitive Edition</name>
+			<playtime_forever>0</playtime_forever>
+			<img_icon_url>f80e173ad5c242ca0d41e30af1f6358d1e64d9b4</img_icon_url>
+			<has_community_visible_stats>true</has_community_visible_stats>
+			<playtime_windows_forever>0</playtime_windows_forever>
+			<playtime_mac_forever>0</playtime_mac_forever>
+			<playtime_linux_forever>0</playtime_linux_forever>
+		</message>
+		<message>
+			<appid>1200</appid>
+			<name>Red Orchestra: Ostfront 41-45</name>
+			<playtime_forever>6</playtime_forever>
+			<img_icon_url>66519d69efc5b98bdafe61347db4ec8be01dff7b</img_icon_url>
+			<has_community_visible_stats>true</has_community_visible_stats>
+			<playtime_windows_forever>0</playtime_windows_forever>
+			<playtime_mac_forever>0</playtime_mac_forever>
+			<playtime_linux_forever>0</playtime_linux_forever>
+		</message>
+		<message>
+			<appid>1230</appid>
+			<name>Mare Nostrum</name>
+			<playtime_forever>0</playtime_forever>
+			<img_icon_url>1e1f56340d2d98a66a9b357257be8e020fb6061f</img_icon_url>
+			<has_community_visible_stats>true</has_community_visible_stats>
+			<playtime_windows_forever>0</playtime_windows_forever>
+			<playtime_mac_forever>0</playtime_mac_forever>
+			<playtime_linux_forever>0</playtime_linux_forever>
+		</message>
+		<message>
+			<appid>1280</appid>
+			<name>Darkest Hour: Europe &apos;44-&apos;45</name>
+			<playtime_forever>0</playtime_forever>
+			<img_icon_url>fb56136d0327b403e276460aca1ff0f559b02215</img_icon_url>
+			<playtime_windows_forever>0</playtime_windows_forever>
+			<playtime_mac_forever>0</playtime_mac_forever>
+			<playtime_linux_forever>0</playtime_linux_forever>
+		</message>
+		<message>
+			<appid>46550</appid>
+			<name>Post Mortem</name>
+			<playtime_forever>0</playtime_forever>
+			<img_icon_url>610dd0e0b3ac5db87d5758abce0616e5de273203</img_icon_url>
+			<playtime_windows_forever>0</playtime_windows_forever>
+			<playtime_mac_forever>0</playtime_mac_forever>
+			<playtime_linux_forever>0</playtime_linux_forever>
+		</message>
 	</games>
-</gamesList>
+</response>
