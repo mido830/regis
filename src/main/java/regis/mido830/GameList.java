@@ -72,6 +72,8 @@ public class GameList {
             futures.add(future);
         }
 
+        executor.shutdown();
+
         for (CompletableFuture<Void> i : futures) {
             try {
                 i.get();
